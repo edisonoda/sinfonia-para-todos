@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Blog com vídeos do YouTube e descrições acessíveis">
+    <link rel="stylesheet" href="main.css">
+    <title>Blog de Vídeos</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSH42</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="menu" aria-label="Menu Principal">
+        <a href="index.html">Introdução</a>
+        <!-- <a href="glossary.html">Glossário</a> -->
+        <a href="#participantes">Participantes</a>
+        <!-- <a href="#feedback">Feedback</a> -->
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <div class="title-div">
+        <h2>Módulo 1: Introdução</h2>
+        <button id="toggleAll" class="toggle-all-btn">
+          Expandir todas as descrições
+        </button>
+      </div>
+
+      <p class="module-desc">
+        Inicie sua jornada de produção músical!
+        <br>
+        Os tutoriais desse módulo ensinam da instalação à sua primeira gravação, sem nem mesmo precisar ter um instrumento.
+        <br>
+        Prepare-se para um <strong>desafio</strong> que te ajudará a pôr em prática seu conhecimento.
+      </p>
+
+      <button id="topBtn" onclick="backToTop()">⬆ Voltar ao Topo</button>
+
+      <section aria-labelledby="video0">
+        <article>
+          <h3 id="video0">Instalação do REAPER</h3>
+
+          <details>
+            <summary class="toggle-btn">Mostrar descrição</summary>
+
+            <p>
+              <strong>1.</strong> Faça o download do
+              <a
+                href="https://www.reaper.fm/download.php"
+                target="_blank"
+                title="Redirecionamento para site externo."
+                >REAPER</a
+              >
+              para o seu sistema operacional.
+            </p>
+            <p>
+              <strong>2.</strong> Inicie o processo de instalação do software
+              abrindo o arquivo baixado, clicando no botão
+              <em>I agree > Next > Install > Close</em>.
+            </p>
+            <p>
+              <strong>3.</strong> Após isso, abra o software para começar a
+              utilizá-lo.
+            </p>
+            <p>
+              <strong>4.</strong> Ao abrir o programa, caso apareça a janela de avaliação, espere
+              5 segundos e clique em "Still Evaluating".
+            </p>
+            <p>
+              <strong>5.</strong> Se o REAPER pedir para configurar os dispositivos, apenas clique em OK.
+            </p>
+          </details>
+
+          <iframe
+            src="https://www.youtube.com/embed/nY_Lux-kUn8?si=uvBirs91gFTOxjMi"
+            title="Vídeo 0: Instalação"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <section aria-labelledby="video1">
+        <article>
+          <h3 id="video1">Interface</h3>
+
+          <details>
+            <summary class="toggle-btn">Mostrar descrição</summary>
+            <p>
+              Nesse vídeo, iremos entender a interface do REAPER e listar quais funções básicas utilizaremos mais à frente. Não precisa se preocupar em entender tudo.
+            </p>
+            <p>
+              <strong>1. Barra de Ferramentas</strong>
+              <br>
+              No canto superior esquerdo está a <strong>Barra de Ferramentas</strong>.
+              
+              Para o intuito desse curso, os únicos botões que iremos utilizar serão o
+              <strong>Metrônomo</strong>, que é o penúltimo botão da primeira linha, e o
+              <strong>Snap</strong>, o antepenúltimo botão da segunda linha.
+            </p>
+            <p>
+              <strong>2. Tracklist</strong>
+              <br>
+              A segunda área, à esquerda, é a <strong>Tracklist</strong>, ou "lista de faixas de áudio",
+              onde vamos colocar nossos instrumentos e os efeitos de áudio, como distorção, delay e EQ.
+            </p>
+            <p>
+              <strong>3. Linha do Tempo</strong>
+              <br>
+              A terceira área, à direita da tracklist, é a <strong>Linha do Tempo</strong>, que contém a
+              separação dos "beats" ou "pulsos" da música e também conterão os áudios de cada
+              instrumento.
+              <br>
+              É aqui que alteramos onde cada áudio fica na música e onde podemos ver qual parte da música
+              que está tocando quando começamos a escutar ela.
+            </p>
+            <p>
+              <strong>4. Menu de Ações</strong>
+              <br>
+              Entre a Linha do Tempo e o Mixer está o <strong>Menu de Ações</strong>, que é onde teremos
+              os botões para gravar, escutar, pausar e parar a música. Também há o campo para alterar o BPM,
+              que fica à direita.
+            </p>
+            <p>
+              <strong>5. Mixer</strong>
+              <br>
+              Por último, abaixo de tudo está o <strong>Mixer</strong>, onde podemos controlar o volume de cada
+              faixa de áudio da nossa tracklist.
+            </p>
+          </details>
+
+          <iframe
+            src="https://www.youtube.com/embed/sxT7kbmmLMI?si=NGCuF76X92Clohm0"
+            title="Vídeo 1: Interface"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <section aria-labelledby="video2">
+        <article>
+          <h3 id="video2">Funções Básicas</h3>
+
+          <details>
+            <summary class="toggle-btn">Mostrar descrição</summary>
+            <p>
+              Nesse vídeo, vamos entender as funcionalidades gerais que utilizaremos no resto do curso.
+            </p>
+            <p>
+              <strong>1. Salvar</strong>
+              <br>
+              Para salvar, vá em <em>File > Save Project</em> ou utilize o atalho Ctrl + S no teclado.
+              <br>
+              Como estamos em um novo projeto, na primeira vez que salvarmos, teremos que dar um nome a ele. Eu sugiro criar uma pasta em um local que você irá lembrar e dar um nome sugestivo para o projeto.
+            </p>
+            <p>
+              <strong>2. Criar faixa</strong>
+              <br>
+              Existem algumas formas de criar uma faixa:
+            </p>
+            <ul>
+              <li>Clique duplo na tracklist</li>
+              <li>Vá para <em>Insert > Track</em></li>
+              <li>Utilize o atalho <em>Ctrl + T</em> no teclado</li>
+            </ul>
+            <p>
+              <strong>2.1. Nomear faixa:</strong> clique duplo na área ao lado do botão vermelho
+            </p>
+            <p>
+              <strong>2.2. Colorir faixa:</strong> botão direito e <em>Track color</em>
+            </p>
+            <p>
+              <strong>2.3. Excluir faixa:</strong> selecione com clique esquerdo e aperte <em>Del</em>
+            </p>
+            <p>
+              <strong>3. Tocar, Parar, Pausar e Voltar ao início</strong>
+              <br>
+              A barra verde na linha do tempo indica qual parte da música será tocada. Ao mover essa barra,
+              você pode ouvir partes diferentes da música.
+            </p>
+            <p>
+              <strong>3.1. Tocar</strong>
+              <br>
+              Aperte <em>Espaço</em> ou clique no botão <em>Play</em> para escutar a música.
+              A barra amarela que aparece é o indicador de qual parte da música está sendo tocada.
+            </p>
+            <p>
+              <strong>3.2. Parar</strong>
+              <br>
+              Enquanto a música está tocando, aperte <em>Espaço</em> ou clique no botão <em>Stop</em>
+              para parar a música.
+              A barra amarela volta para onde está a verde.
+            </p>
+            <p>
+              <strong>3.3. Pausar</strong>
+              <br>
+              Enquanto a música está tocando, aperte <em>Ctrl + Espaço</em> ou clique no botão <em>Pause</em>
+              para pausar a música.
+              A barra verde vai para onde está a amarela.
+            </p>
+            <p>
+              <strong>3.4. Voltar ao início</strong>
+              <br>
+              É possível mover as barras verde e amarela ao início pelo atalho <em>W</em> ou pelo
+              primeiro botão da barra de ações.
+            </p>
+            <p>
+              <strong>4. Repetir</strong>
+              <br>
+              Clique e arraste a parte superior da linha do tempo. Então, utilize o atalho <em>R</em>
+              ou clique no botão de repetir. Quando o botão está verde, significa que a música está repetindo.
+              <br>
+              Se quiser limpar sua seleção da parte da música, apenas realize um clique duplo na
+              parte superior da linha do tempo.
+            </p>
+            <p>
+              <strong>5. Criar um MIDI</strong>
+              <br>
+              Selecione uma faixa e vá em <em>Insert > New MIDI Item</em>.
+              <br>
+              Um MIDI guarda as informações das teclas tocadas, não o som em si. Faça um clique duplo no item
+              para abrir um teclado virtual.
+              Não sai nenhum som pois precisamos atribuir um instrumento à faixa.
+            </p>
+          </details>
+
+          <iframe
+            src="https://www.youtube.com/embed/4deVEhTK9eY?si=KohPA8VA0YHqN_76"
+            title="Vídeo 2: Funções Básicas"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <section aria-labelledby="video3">
+        <article>
+          <h3 id="video3">Introdução ao MIDI</h3>
+          <details>
+            <summary class="toggle-btn">Mostrar descrição</summary>
+            <p>
+              <strong>1. Atribuir Instrumento</strong>
+              <br>
+              Para um MIDI ser funcional, a faixa precisa ter um instrumento.
+            </p>
+            <p>
+              <strong>1.1.</strong> Clique no botão <em>FX</em> na faixa.
+            </p>
+            <p>
+              <strong>1.2.</strong> Vá para a categoria <em>Instruments</em>.
+            </p>
+            <p>
+              <strong>1.3.</strong> Selecione o <em>ReaSynth</em>.
+            </p>
+            <p>
+              <strong>1.4.</strong> Feche a janela de efeitos.
+            </p>
+            <p>
+              <strong>2. Criar Melodia</strong>
+              <br>
+              Use um clique duplo no item MIDI.
+              A janela do MIDI possui uma linha do tempo, assim como nossa janela principal.
+              Nela, é possível colocar notas musicais.
+              <br><br>
+              Existem duas formas de criar notas:
+            </p>
+            <p>
+              <strong>2.1.</strong> Clicar e arrastar em algum lugar da linha do tempo.
+            </p>
+            <p>
+              <strong>2.2.</strong> Realizar um clique duplo em algum lugar da linha do tempo.
+            </p>
+            <p>
+              Algumas outras funções da janela MIDI:
+            </p>
+            <ul>
+              <li>Ajustar tamanho do MIDI: clique e arraste a parte final da linha do tempo</li>
+              <li>Ajustar tamanho da nota: clique e arraste a parte final da nota</li>
+              <li>Mover nota: clique no meio da nota e arraste</li>
+              <li>
+                Snap: ative ou desative na barra de ferramentas do MIDI.
+                Permite ajustar o tamanho e mover livremente a nota
+              </li>
+            </ul>
+            <p>
+              <strong>3. Replicar MIDI</strong>
+              <br>
+              Algo muito comum de se fazer é repetir uma mesma gravação várias vezes durante a música.
+              Há duas formas de fazer isso com MIDI:
+            </p>
+            <ul>
+              <li>Arrastar o final do item MIDI</li>
+              <li>Selecionar o item, copiar com <em>Ctrl + C</em> e colar com <em>Ctrl + V</em></li>
+            </ul>
+          </details>
+
+          <iframe
+            src="https://www.youtube.com/embed/hizoZ8ca0tI?si=3k7FZ0QHQ_pBrEI0"
+            title="Vídeo 3: Introdução ao MIDI"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <section aria-labelledby="video4">
+        <article>
+          <h3 id="video4">Gravação em MIDI</h3>
+
+          <details>
+            <summary class="toggle-btn">Mostrar descrição</summary>
+            <p>
+              <strong>Como gravar uma sequência de notas em MIDI:</strong>
+              <strong>1.</strong> Clique no botão vermelho da faixa
+              <strong>2.</strong> Clique onde está escrito <em>Input 1</em> e vá para
+              <em>Input: MIDI > Virtual MIDI Keyboard</em>
+              <strong>3.</strong> Use o atalho <em>Alt + B</em> ou vá em <em>View > Virtual MIDI Keyboard</em>
+              para abrir o teclado MIDI
+              <strong>4.</strong> Use o atalho <em>Ctrl + R</em> para iniciar a gravação
+              <strong>5.</strong> Pressione <em>Espaço</em> para parar a gravação
+            </p>
+          </details>
+
+          <iframe
+            src="https://www.youtube.com/embed/iKk1oVnlCJs?si=g4_JoINYNbI6oRCe"
+            title="Vídeo 4: Gravação em MIDI"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+
+      <section aria-labelledby="desafio" class="secao-desafio">
+        <article>
+          <h3 id="desafio">Desafio</h3>
+          <p>
+            Depois de assistir todos os vídeos desse módulo, você está pronto para fazer sua
+            primeira gravação dentro do REAPER!
+            <br><br>
+            <em>
+              Seu desafio será recriar o riff principal de "Highway to Hell" utilizando o
+              teclado MIDI que configuramos ao final do último vídeo.
+            </em>
+            <br><br>
+            Caso tenha dificuldades, lembre-se que pode voltar aos vídeos anteriores.
+            Depois que finalizar, veja o vídeo de solução e compare sua produção!
+            <br><br>
+            <small>Altere o BPM para 116 (original da música).</small>
+          </p>
+        </article>
+      </section>
+
+      <section aria-labelledby="videoSolucao">
+        <article>
+          <h3 id="videoSolucao">Solução</h3>
+          <details>
+            <summary class="toggle-btn">Mostrar descrição</summary>
+            <p>
+              <strong>1.</strong> Verifique se sua faixa está pronta para gravação
+            </p>
+            <p>
+              <strong>2.</strong> Exclua o MIDI criado no último vídeo
+            </p>
+            <p>
+              <strong>3.</strong> Habilite o metrônomo na barra de ferramentas
+            </p>
+            <p>
+              <strong>4.</strong> Abra o teclado virtual com o atalho <em>Alt + B</em>
+            </p>
+            <p>
+              <strong>5.</strong> Inicie a gravação com o atalho <em>Ctrl + R</em>
+            </p>
+            <p>
+              O riff pode ser tocado com as teclas N, G e B, que são as notas Lá, Fá Sustenido e Sol, respectivamente.
+            </p>
+            <p>
+              <strong>Bônus</strong>
+              <br>
+              Uma das propriedades do MIDI é que podemos mudar o instrumento, mantendo o que já tocamos.
+              Vá em <em>FX</em> na sua faixa com MIDI e aumente o <em>Release</em> para 250.
+            </p>
+          </details>
+          <iframe
+            src="https://www.youtube.com/embed/47-SLACZTlE?si=vXoFDGNGgoQE5ebH"
+            title="Vídeo 5: Solução do Desafio"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </article>
+      </section>
+    </main>
+
+    <aside id="participantes">
+      <h2>Participantes</h2>
+      <p>
+        Arthur M. de Oliveira<br>Edison F. Furusato Oda<br>Gabriel M. C. Akiba<br>Gustavo M. de Almeida<br>Laura F. Pelisson<br>Leonardo B. de Melo<br>Coordenação: Leonelo Dell Anhol Almeida
+      </p>
+    </aside>
+
+    <footer id="feedback">
+      <!-- <h2>Feedback</h2>
+      <p>Deixe-nos sua opinião! Sua sugestão é muito importante para nós.</p>
+      <form
+        action="https://docs.google.com/forms/d/10bQlGg8vssIE6-KzBJtBH5fK8nqRIh61m29JSVSiNtg/formResponse"
+        method="post"
+      >
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="entry.380005752" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="entry.278129209" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea
+          id="message"
+          name="entry.418281369"
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form> -->
+
+      <p>
+        <span property="dct:title">Sinfonia para Todos</span> licenciado por
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+          target="_blank"
+          title="Redirecionamento para site externo."
+          rel="license noopener noreferrer"
+          style="display: inline-block"
+          >CC BY-NC-SA 4.0
+
+          <img
+            class="cc-icons"
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+            alt="Selo da licença Creative Commons"
+          />
+
+          <img
+            class="cc-icons"
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+            alt="Selo da categoria BY"
+          />
+
+          <img
+            class="cc-icons"
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+            alt="Selo da categoria Non-Comercial"
+          />
+
+          <img
+            class="cc-icons"
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+            alt="Selo da categoria Share Alike "
+          />
+        </a>
+      </p>
+    </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("menu");
+      nav.classList.toggle("active");
+    }
+
+    const topBtn = document.getElementById("topBtn");
+
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    function backToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.getElementById("toggleAll").addEventListener("click", function () {
+      const detailsElements = document.querySelectorAll("details");
+      const allExpanded = [...detailsElements].every((details) => details.open);
+
+      detailsElements.forEach((details) => {
+        details.open = !allExpanded; // Expande se pelo menos um estiver fechado, colapsa se todos estiverem abertos
+      });
+
+      this.textContent = allExpanded
+        ? "Expandir todas as descrições"
+        : "Colapsar todas as descrições";
+    });
+  </script>
+  
+  </body>
+</html>
