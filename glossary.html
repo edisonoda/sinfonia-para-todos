@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="Blog com vídeos do YouTube e descrições acessíveis">
+    <link rel="stylesheet" href="main.css">
+    <title>Blog de Vídeos</title>
+  </head>
+  <body>
+    <header>
+      <h1>CSH42</h1>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <nav id="menu" aria-label="Menu Principal">
+        <a href="index.html">Introdução</a>
+        <a href="efeitos.html">Efeitos</a>
+        <a href="glossary.html">Glossário</a>
+        <!-- <a href="#feedback">Feedback</a> -->
+      </nav>
+    </header>
+
+    <main id="main-content">
+      <button id="topBtn" onclick="backToTop()">⬆ Voltar ao Topo</button>
+
+      <h2>Glossário</h2>
+      <p>
+        Aqui você vai encontrar termos e conceitos usados nos vídeos e em produção musical.
+      </p>
+      <br>
+
+      <section id="table-contents" aria-labelledby="table-contents-title">
+        <h3 id="table-contents-title">Índice</h3>
+        <nav aria-label="Índice">
+          <a href="#barra-ferramentas">Barra de Ferramentas</a>
+          <a href="#bpm">BPM</a>
+          <a href="#faixa">Faixa</a>
+          <a href="#midi">MIDI</a>
+          <a href="#fx">FX</a>
+          <a href="#participantes">Participantes</a>
+        </nav>
+      </section>
+
+      <section aria-labelledby="glossary">
+        <article id="barra-ferramentas">
+          <h3>Barra de Ferramentas</h3>
+          <p>
+            Dentro da barra de ferramentas do Reaper, são citados os botões de <strong>metrônomo</strong> e <strong>snap</strong>. Quando ativados, esses botões fazem o seguinte:
+          </p>
+          <ul>
+            <li>
+              <strong>Metrônomo</strong>: indica o andamento musical por meio de pulsos regulares, seguindo o <a href="#bpm">BPM</a> da música
+            </li>
+            <li>
+              <strong>Snap</strong>: simplifica todas as ações da linha do tempo, "prendendo" faixas e notas ao grid (as linhas verticais)
+            </li>
+          </ul>
+        </article>
+
+        <article id="bpm">
+          <h3>BPM</h3>
+          <p>
+            Do inglês "<strong>B</strong>eats <strong>P</strong>er <strong>M</strong>inute", pode ser traduzido como "pulsos" ou "batidas" por minuto. É uma medição do quão rápida é a música.
+          </p>
+        </article>
+
+        <article id="faixa">
+          <h3>Faixa</h3>
+          <p>
+            Uma faixa (track) é uma camada da música, que representa um instrumento, voz ou outro sons. Esses elementos são colocados na track como gravações, arquivos de mídia ou itens <a href="#midi">MIDI</a>.
+            <br>
+            No Reaper, cada faixa pode ter nome, cor, efeitos e configurações de gravação.
+          </p>
+        </article>
+
+        <article id="midi">
+          <h3>MIDI</h3>
+          <p>
+            Do inglês "<strong>M</strong>usical <strong>I</strong>nstrument <strong>D</strong>igital <strong>I</strong>nterface", é um padrão de gravação que comunica as notas tocadas em tempo real.
+            <br>
+            No Reaper, podemos considerar como MIDI qualquer item que contenha as informações das notas, mas é possível escolher quais os sons relacionados com quais notas escolhendo um instrumento a partir da opção <a href="#fx">FX</a> de uma <a href="#faixa">faixa</a>.
+          </p>
+        </article>
+
+        <article id="fx">
+          <h3>FX</h3>
+          <p>
+            Uma abreviação de "Effects" (efeitos, em português). Alguns efeitos importantes são:
+          </p>
+          <ul>
+            <li>
+              <strong>Reverb</strong>: produz reflexões sonoras, como pequenos "ecos"
+            </li>
+            <li>
+              <strong>EQ</strong>: o equalizador, permite aumentar ou reduzir determinadas frequências do áudio (grave, médio, agudo)
+            </li>
+            <li>
+              <strong>Compressor</strong>: nivela os sons para normalizar os volumes entre sons muito altos e muito baixos
+            </li>
+          </ul>
+          <p>
+            Apesar do nome, os efeitos também podem ser instrumentos no Reaper.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <aside id="participantes">
+      <h2>Participantes</h2>
+      <p>
+        Arthur M. de Oliveira<br>Edison F. Furusato Oda<br>Gabriel M. C. Akiba<br>Gustavo M. de Almeida<br>Laura F. Pelisson<br>Leonardo B. de Melo<br>Coordenação: Leonelo Dell Anhol Almeida
+      </p>
+    </aside>
+
+    <footer id="feedback">
+      <!-- <h2>Feedback</h2>
+      <p>Deixe-nos sua opinião! Sua sugestão é muito importante para nós.</p>
+      <form
+        action="https://docs.google.com/forms/d/10bQlGg8vssIE6-KzBJtBH5fK8nqRIh61m29JSVSiNtg/formResponse"
+        method="post"
+      >
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="entry.380005752" required>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="entry.278129209" required>
+
+        <label for="message">Mensagem:</label>
+        <textarea
+          id="message"
+          name="entry.418281369"
+          rows="5"
+          required
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+      </form> -->
+
+      <p>
+        <span property="dct:title">Sinfonia para Todos</span> licenciado por
+        <a
+          href="https://creativecommons.org/licenses/by-nc-sa/4.0/?ref=chooser-v1"
+          target="_blank"
+          title="Redirecionamento para site externo."
+          rel="license noopener noreferrer"
+          style="display: inline-block"
+          >CC BY-NC-SA 4.0
+
+          <img
+            class="cc-icons"
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"
+            alt="Selo da licença Creative Commons"
+          />
+
+          <img
+            class="cc-icons"
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"
+            alt="Selo da categoria BY"
+          />
+
+          <img
+            class="cc-icons"
+            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"
+            alt="Selo da categoria Non-Comercial"
+          />
+
+          <img
+            class="cc-icons"
+            src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"
+            alt="Selo da categoria Share Alike "
+          />
+        </a>
+      </p>
+    </footer>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("menu");
+      nav.classList.toggle("active");
+    }
+
+    const topBtn = document.getElementById("topBtn");
+
+    window.onscroll = function () {
+      if (document.documentElement.scrollTop > 300) {
+        topBtn.style.display = "block";
+      } else {
+        topBtn.style.display = "none";
+      }
+    };
+
+    function backToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+
+    document.getElementById("toggleAll").addEventListener("click", function () {
+      const detailsElements = document.querySelectorAll("details");
+      const allExpanded = [...detailsElements].every((details) => details.open);
+
+      detailsElements.forEach((details) => {
+        details.open = !allExpanded; // Expande se pelo menos um estiver fechado, colapsa se todos estiverem abertos
+      });
+
+      this.textContent = allExpanded
+        ? "Expandir todas as descrições"
+        : "Colapsar todas as descrições";
+    });
+  </script>
+  
+  </body>
+</html>
