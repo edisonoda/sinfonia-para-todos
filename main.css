@@ -34,15 +34,42 @@ header nav {
   display: flex;
 }
 header nav a {
-  color: white;
-  text-decoration: none;
   font-size: 1.1rem;
   margin: 0 1rem;
   padding: 0.5rem 1rem;
+}
+#table-contents {
+  background-color: #1e1e2f;
+  border-radius: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+}
+#table-contents h3 {
+  font-size: 1.5rem;
+  color: #61dafb;
+}
+#table-contents nav {
+  display: flex;
+  flex-direction: column;
+}
+#table-contents nav a {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+  width: fit-content;
+}
+header nav a,
+#table-contents nav a {
+  color: white;
+  text-decoration: none;
   transition: background-color 0.3s ease;
   border-radius: 5px;
 }
-header nav a:hover {
+#table-contents nav a::before {
+  content: "\21AA";
+  margin-right: 0.2rem;
+}
+header nav a:hover,
+#table-contents a:hover {
   background-color: #007acc;
 }
 
